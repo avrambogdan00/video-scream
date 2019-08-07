@@ -7,5 +7,5 @@ function setup() {
 
 function draw() {
     var vol = mic.getLevel();
-    document.write(vol + Math.random(0, 10) + ' ');
+    document.write(vol + ' ');
 }
