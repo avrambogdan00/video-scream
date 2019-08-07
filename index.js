@@ -12,6 +12,6 @@ function draw() {
     console.log(vol);
     vol = parseFloat(vol);
     if(vol > 0.7) {
-        video.stopVideo();
+        stopVideo();
     }
 }
