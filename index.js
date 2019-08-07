@@ -9,9 +9,10 @@ function setup() {
 
 function draw() {
     var vol = mic.getLevel().toFixed(3);
-    console.log(vol);
+    
     vol = parseFloat(vol);
     if(vol > 0.7) {
         stopVideo();
+        console.log(vol);
     }
 }
