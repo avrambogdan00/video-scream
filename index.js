@@ -6,6 +6,6 @@ function setup() {
 }
 
 function draw() {
-    var vol = mic.getLevel();
-    document.write(Math.round(vol) + '');
+    var vol = mic.getLevel().toFixed(3);
+    document.write(vol + '  ');
 }
