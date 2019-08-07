@@ -1,0 +1,14 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.mic-ready {
+    top: 225px;
+    position: relative;
+    display: none;
+}
+
+div.video {
+
+}

@@ -1,0 +1,17 @@
+{
+  "name": "video-scream",
+  "version": "1.0.0",
+  "description": "scream and the video pauses",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "scream"
+  ],
+  "author": "avrambogdan00",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^6.0.1"
+  }
+}
