@@ -8,5 +8,8 @@ function setup() {
 function draw() {
     var vol = mic.getLevel().toFixed(3);
     document.write(vol + '  ');
-    document.body.innerHTML = '';
+    setTimeout(function() {
+        document.body.innerHTML = '';
+    }, 500);
+    
 }
