@@ -1,5 +1,5 @@
 var mic;
-var video = document.querySelector('video');
+var video = document.getElementById('video');
 
 function setup() {
     mic = new p5.AudioIn();
