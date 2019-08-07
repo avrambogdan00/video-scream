@@ -1,4 +1,5 @@
 var mic;
+var video = document.querySelector('video');
 
 function setup() {
     mic = new p5.AudioIn();
@@ -7,9 +8,9 @@ function setup() {
 
 function draw() {
     var vol = mic.getLevel().toFixed(3);
-    document.write(vol + '  ');
-    setTimeout(function() {
-        document.body.innerHTML = '';
-    }, 500);
-    
+    console.log(vol);
+    vol = parseFloat(vol);
+    if(vol > 0.7) {
+        video.pause();
+    }
 }
