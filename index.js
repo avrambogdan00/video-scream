@@ -2,7 +2,7 @@ var mic;
 var video = document.getElementById('video');
 
 function setup() {
-    video.play();
+    //video.play();
     mic = new p5.AudioIn();
     mic.start();
 }
