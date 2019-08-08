@@ -34,3 +34,22 @@ function Microphone (_fft) {  var FFT_SIZE = _fft || 1024;  this.spectrum = [];
        node.connect(context.destination);  }  function error () {
        console.log(arguments);
     }}//////// SOUND UTILITIES  ///////////// ..... we going to put more stuff here....return this;};var Mic = new Microphone();
+
+    // A more accurate way to get overall volume
+this.getRMS = function (spectrum) {
+    var rms = 0;
+    for (var i = 0; i < vols.length; i++) {
+      rms += spectrum[i] * spectrum[i];
+    }
+    rms /= spectrum.length;
+    rms = Math.sqrt(rms);
+    return rms;
+}
+
+var ctx = createCanvas("canvas1");
+ctx.background(235);
+function draw(){
+    var s = Mic.getRMS();
+    ctx.fillStyle = rgb(s*2);
+    ctx.HfillEllipse(w/2, h/2, s*5, s*5);
+}
